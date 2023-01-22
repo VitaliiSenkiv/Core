@@ -127,7 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Types\Color\Color.h" />
     <ClInclude Include="Source\Types\CoreTypes.h" />
+    <ClInclude Include="Source\Types\Vector\Vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Types\Color\Color.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
