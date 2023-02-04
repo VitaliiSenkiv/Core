@@ -1,16 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source">
+    <Filter Include="Source Files">
       <UniqueIdentifier>{7f79b355-d9d9-42bf-b2e1-f05b246646c2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source\Types">
+    <Filter Include="Source Files\Types">
       <UniqueIdentifier>{92cd9207-5ad3-45ce-9ce1-459cc96246c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\Color">
+      <UniqueIdentifier>{4d479658-8a85-4550-80be-5fa1347445d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\Vector">
+      <UniqueIdentifier>{e0bac363-9c74-4777-b8ed-baae30d140fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render">
+      <UniqueIdentifier>{cb84f371-4d31-41bb-8238-ddcb0f261d20}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Types\CoreTypes.h">
-      <Filter>Source\Types</Filter>
+    <ClInclude Include="Source\Core\Types\CoreTypes.h">
+      <Filter>Source Files\Types</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Core\Types\Color\Color.h">
+      <Filter>Source Files\Types\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Types\Vector\Vector.h">
+      <Filter>Source Files\Types\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Render\Renderer.h">
+      <Filter>Source Files\Render</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\Types\Color\Color.cpp">
+      <Filter>Source Files\Types\Color</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Render\Renderer.cpp">
+      <Filter>Source Files\Render</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
