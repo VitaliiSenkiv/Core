@@ -1,6 +1,8 @@
 #pragma once
 
-struct Color
+#include "Core/CoreAPI.h"
+
+struct CORE_API Color
 {
 	/* Predefined colors */
 	const static Color Red;
