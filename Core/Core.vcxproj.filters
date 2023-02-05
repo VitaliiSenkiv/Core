@@ -30,6 +30,7 @@
     <ClInclude Include="Source\Core\Render\Renderer.h">
       <Filter>Source Files\Render</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Core\Types\Traits\TypeTraits.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\Types\Color\Color.cpp">

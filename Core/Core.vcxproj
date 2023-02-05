@@ -154,6 +154,7 @@
     <ClInclude Include="Source\Core\Render\Renderer.h" />
     <ClInclude Include="Source\Core\Types\Color\Color.h" />
     <ClInclude Include="Source\Core\Types\CoreTypes.h" />
+    <ClInclude Include="Source\Core\Types\Traits\TypeTraits.h" />
     <ClInclude Include="Source\Core\Types\Vector\Vector.h" />
   </ItemGroup>
   <ItemGroup>
