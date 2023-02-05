@@ -69,10 +69,10 @@ void DrawTest()
 	GL_DRAW
 	(
 		GL_POLYGON,
-		glVertex2d(50 + movement * 5, 50);
-		glVertex2d(50 + movement * 5, 100);
-		glVertex2d(100 + movement * 5, 100);
-		glVertex2d(100 + movement * 5, 50);
+		glVertex2d(50 + movement * .05, 50);
+		glVertex2d(50 + movement * .05, 100);
+		glVertex2d(100 + movement * .05, 100);
+		glVertex2d(100 + movement * .05, 50);
 		++movement;
 	);
 
