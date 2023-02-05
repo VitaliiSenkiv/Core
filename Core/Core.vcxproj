@@ -116,7 +116,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);CORE_BUILD;FREEGLUT_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)External\freeglut_static\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)External\freeglut_static\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,7 +136,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);CORE_BUILD;FREEGLUT_STATIC</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)External\freeglut_static\include\</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source;$(ProjectDir)External\freeglut_static\include\</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,15 +151,20 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Source\Core\Render\Renderer.h" />
+    <ClInclude Include="Source\Core\CoreAPI.h" />
+    <ClInclude Include="Source\Core\Render\Renderer\Renderer.h" />
     <ClInclude Include="Source\Core\Types\Color\Color.h" />
     <ClInclude Include="Source\Core\Types\CoreTypes.h" />
     <ClInclude Include="Source\Core\Types\Traits\TypeTraits.h" />
     <ClInclude Include="Source\Core\Types\Vector\Vector.h" />
+    <ClInclude Include="Source\Core\Render\Window\Window.h" />
+    <ClInclude Include="Source\Core\Types\Timer\Timer.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source\Core\Render\Renderer.cpp" />
+    <ClCompile Include="Source\Core\Render\Renderer\Renderer.cpp" />
     <ClCompile Include="Source\Core\Types\Color\Color.cpp" />
+    <ClCompile Include="Source\Core\Render\Window\Window.cpp" />
+    <ClCompile Include="Source\Core\Types\Timer\Timer.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

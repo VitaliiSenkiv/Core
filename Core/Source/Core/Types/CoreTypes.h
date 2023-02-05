@@ -1,6 +1,8 @@
 #pragma once
 
 #include "Vector/Vector.h"
+#include "Color/Color.h"
+#include "Timer/Timer.h"
 
 #pragma region Typedefs
 
