@@ -1,6 +1,6 @@
 /** 
  * IsEqual type trait helps to determine, whether types are equal.
- * IsEqual<A, B>::Value is true, if A and B are equal types and false if not
+ * TIsEqual<A, B>::Value is true, if A and B are equal types and false if not
  */
 #pragma region IsEqual
 
@@ -19,8 +19,8 @@ struct TIsEqual<T, T>
 #pragma endregion
 
 /** 
- * IfValid type trait contains Value, if type value is true, and doesn't in other case.
- * e.g. IfValid<IsEqual<A, B>::Value>::Value will compile only, if A and B types are same
+ * EnableIf type trait contains Value, if type value is true, and doesn't in other case.
+ * e.g. TEnableIf<TIsEqual<A, B>::Value>::Value will compile only, if A and B types are same
  */
 #pragma region EnableIf
 
@@ -37,7 +37,7 @@ struct TEnableIf<false> { };
 
 /**
  * IsChildOf type trait determines, whether one type is derived from another.
- * e.g. IsChildOf<Base, Child>::IsChild equals to true if Child is Base or inherited from it, else IsChild = false
+ * e.g. TIsChildOf<Base, Child>::IsChild equals to true if Child is Base or inherited from it, else IsChild = false
  */
 #pragma region IsChildOf
 
