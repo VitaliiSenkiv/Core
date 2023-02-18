@@ -25,7 +25,7 @@ public:
 	/** Returns rand value in range [Min, Max] */
 	static float RandRange(float Min, float Max) { return Min + (Max - Min) * FRand(); }
 	/** Returns randon number in range [0.0, 1.0] */
-	static float FRand() { return Rand() / RAND_MAX; }
+	static float FRand() { return Rand() / (float)RAND_MAX; }
 	/** Returns random value in range [0, RAND_MAX] */
 	static int Rand() { return rand(); }
 
