@@ -4,12 +4,6 @@
 
 #include "GL/glut.h"
 
-// cringe
-#define GL_DRAW(Type, VerticesCode) \
-	glBegin(Type); \
-	VerticesCode \
-	glEnd();
-
 
 const int DrawInfo::PolygonMode = GL_POLYGON;
 
@@ -31,20 +25,6 @@ void Renderer::SetBackgroundColor(const Color& NewBackgroundColor)
 		NewBackgroundColor.B,
 		NewBackgroundColor.A
 	);
-}
-
-void Renderer::Run()
-{
-	glutPrepareMainLoop();
-
-	while (glutIsRunning())
-	{
-		glutUpdateMainLoop();
-
-		glClear(GL_COLOR_BUFFER_BIT);
-
-		Draw();
-	}
 }
 
 inline bool Renderer::IsRunning()

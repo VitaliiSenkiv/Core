@@ -7,6 +7,24 @@
 
 #include <vector>
 
+/**
+ * Renderer is class used for drawing different objects (currently based on OpnGl(custom modified version of freeglut))
+ * 
+ * Exaple of use renderer:
+ * 
+ *   Window Window(WindowWidth, WindowHeight, "TestWin");
+ *   
+ *   Renderer Renderer(&Window);
+ *   
+ *   Renderer.Prepare();
+ *   while (Renderer.IsRunning())
+ *   {
+ *       // Your code here
+ *       // Renderer.AddToDraw()
+ *       Renderer.Update();
+ *   }
+ */
+
 class CORE_API Renderer
 {
 public:
@@ -14,8 +32,6 @@ public:
 
 public:
 	void SetBackgroundColor(const Color& NewBackgroundColor);
-
-	void Run();
 
 	inline bool IsRunning();
 	void Prepare();
