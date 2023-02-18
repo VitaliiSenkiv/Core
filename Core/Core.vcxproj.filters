@@ -34,6 +34,7 @@
     <ClInclude Include="Source\Core\Render\Window\Window.h" />
     <ClInclude Include="Source\Core\CoreAPI.h" />
     <ClInclude Include="Source\Core\Types\Timer\Timer.h" />
+    <ClInclude Include="Source\Core\Render\DrawInfo\DrawInfo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\Types\Color\Color.cpp">

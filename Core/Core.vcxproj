@@ -152,6 +152,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\CoreAPI.h" />
+    <ClInclude Include="Source\Core\Render\DrawInfo\DrawInfo.h" />
     <ClInclude Include="Source\Core\Render\Renderer\Renderer.h" />
     <ClInclude Include="Source\Core\Types\Color\Color.h" />
     <ClInclude Include="Source\Core\Types\CoreTypes.h" />

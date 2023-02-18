@@ -1,5 +1,10 @@
 #pragma once
 
+/**
+ * This file should be included to all internal Core files to allow use CORE_API
+ * to allow exporting structs/classes
+ */
+
 #pragma region CoreDll
 
 #ifdef CORE_BUILD
