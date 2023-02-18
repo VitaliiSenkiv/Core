@@ -151,6 +151,7 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Source\Core\Math\Math.h" />
     <ClInclude Include="Source\Core\CoreAPI.h" />
     <ClInclude Include="Source\Core\Render\DrawInfo\DrawInfo.h" />
     <ClInclude Include="Source\Core\Render\Renderer\Renderer.h" />
@@ -162,6 +163,7 @@
     <ClInclude Include="Source\Core\Types\Timer\Timer.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Source\Core\Math\Math.cpp" />
     <ClCompile Include="Source\Core\Render\Renderer\Renderer.cpp" />
     <ClCompile Include="Source\Core\Types\Color\Color.cpp" />
     <ClCompile Include="Source\Core\Render\Window\Window.cpp" />

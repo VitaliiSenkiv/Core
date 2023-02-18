@@ -16,6 +16,24 @@
     <Filter Include="Source Files\Render">
       <UniqueIdentifier>{cb84f371-4d31-41bb-8238-ddcb0f261d20}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{aa50eb27-80bf-48e3-bc6f-52384dfa4611}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\Renderer">
+      <UniqueIdentifier>{abccc52d-01f3-4c1a-b927-21f5dd918266}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\DrawInfo">
+      <UniqueIdentifier>{5dbb53d5-2da9-4562-8089-537eebcfd097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Render\Window">
+      <UniqueIdentifier>{648aff28-e1f9-4b16-bba7-e4d828646dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\Timer">
+      <UniqueIdentifier>{aceff389-5fa4-4519-901b-abcb120716f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\Traits">
+      <UniqueIdentifier>{4cdf90b9-4877-4f2b-8501-d5496146b897}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\Types\CoreTypes.h">
@@ -27,23 +45,41 @@
     <ClInclude Include="Source\Core\Types\Vector\Vector.h">
       <Filter>Source Files\Types\Vector</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Core\Render\Renderer\Renderer.h">
-      <Filter>Source Files\Render</Filter>
-    </ClInclude>
-    <ClInclude Include="Source\Core\Types\Traits\TypeTraits.h" />
-    <ClInclude Include="Source\Core\Render\Window\Window.h" />
     <ClInclude Include="Source\Core\CoreAPI.h" />
-    <ClInclude Include="Source\Core\Types\Timer\Timer.h" />
-    <ClInclude Include="Source\Core\Render\DrawInfo\DrawInfo.h" />
+    <ClInclude Include="Source\Core\Math\Math.h">
+      <Filter>Source Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Render\Renderer\Renderer.h">
+      <Filter>Source Files\Render\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Render\DrawInfo\DrawInfo.h">
+      <Filter>Source Files\Render\DrawInfo</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Render\Window\Window.h">
+      <Filter>Source Files\Render\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Types\Timer\Timer.h">
+      <Filter>Source Files\Types\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Types\Traits\TypeTraits.h">
+      <Filter>Source Files\Types\Traits</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\Types\Color\Color.cpp">
       <Filter>Source Files\Types\Color</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Core\Render\Renderer\Renderer.cpp">
-      <Filter>Source Files\Render</Filter>
+    <ClCompile Include="Source\Core\Math\Math.cpp">
+      <Filter>Source Files\Math</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Core\Render\Window\Window.cpp" />
-    <ClCompile Include="Source\Core\Types\Timer\Timer.cpp" />
+    <ClCompile Include="Source\Core\Render\Renderer\Renderer.cpp">
+      <Filter>Source Files\Render\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Render\Window\Window.cpp">
+      <Filter>Source Files\Render\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Types\Timer\Timer.cpp">
+      <Filter>Source Files\Types\Timer</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
