@@ -4,6 +4,7 @@
 
 #include "GL/glut.h"
 
+void* DrawTextInfo::DefaultFont = GLUT_BITMAP_9_BY_15;
 
 const int DrawInfo::PolygonMode = GL_POLYGON;
 
@@ -51,6 +52,11 @@ void Renderer::AddToDraw(const DrawInfo& DrawInfo)
 	DrawBuffer.emplace_back(DrawInfo);
 }
 
+void Renderer::AddToDraw(const DrawTextInfo& DrawTextInfo)
+{
+	DrawTextBuffer.emplace_back(DrawTextInfo);
+}
+
 void Renderer::Draw()
 {
 	for (DrawInfo& DrawInfo : DrawBuffer)
@@ -65,6 +71,18 @@ void Renderer::Draw()
 		glEnd();
 	}
 	DrawBuffer.clear();
+
+	for (DrawTextInfo& DrawTextInfo : DrawTextBuffer)
+	{
+		glColor4fv(DrawTextInfo.Color.RGBA);
+
+		glRasterPos3dv(DrawTextInfo.Position.XYZ);
+
+		for (char Character : DrawTextInfo.Text)
+		{
+			glutBitmapCharacter(DrawTextInfo.Font, Character);
+		}
+	}
 
 	glFlush();
 }
