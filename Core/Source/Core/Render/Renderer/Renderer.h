@@ -3,6 +3,7 @@
 #include "Core/CoreAPI.h"
 #include "Core/Types/CoreTypes.h"
 #include "Core/Render/Window/Window.h"
+#include "Core/Render/DrawInfo/DrawInfo.h"
 
 #include <vector>
 
