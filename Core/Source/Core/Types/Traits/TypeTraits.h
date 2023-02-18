@@ -5,13 +5,13 @@
 #pragma region IsEqual
 
 template<typename A, typename B>
-struct IsEqual
+struct TIsEqual
 {
 	static constexpr bool Value = false;
 };
 
 template<typename T>
-struct IsEqual<T, T>
+struct TIsEqual<T, T>
 {
 	static constexpr bool Value = true;
 };
@@ -22,16 +22,16 @@ struct IsEqual<T, T>
  * IfValid type trait contains Value, if type value is true, and doesn't in other case.
  * e.g. IfValid<IsEqual<A, B>::Value>::Value will compile only, if A and B types are same
  */
-#pragma region IfValid
+#pragma region EnableIf
 
 template<bool>
-struct IfValid { };
+struct TEnableIf { };
 
 template<>
-struct IfValid<true> { enum { Value }; };
+struct TEnableIf<true> { enum { Value }; };
 
 template<>
-struct IfValid<false> { };
+struct TEnableIf<false> { };
 
 #pragma endregion
 
@@ -42,7 +42,7 @@ struct IfValid<false> { };
 #pragma region IsChildOf
 
 template<typename Base, typename Child>
-struct IsChildOf
+struct TIsChildOf
 {
 	/** Different sizes of types to compare sizes via sizeof in compile time*/
 	using Yes = char[1];
