@@ -27,11 +27,11 @@ Window::Window(
 
 inline int Window::GetWidth() const
 {
-	return glutGet(GLUT_SCREEN_WIDTH);
+	return glutGet(GLUT_WINDOW_WIDTH);
 }
 inline int Window::GetHeight() const
 {
-	return glutGet(GLUT_SCREEN_HEIGHT);
+	return glutGet(GLUT_WINDOW_HEIGHT);
 }
 
 /* Перемалювання вікна у разі зміни його розмірів */
