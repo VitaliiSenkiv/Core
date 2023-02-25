@@ -38,7 +38,7 @@ void Renderer::Update()
 {
 	glutUpdateMainLoop();
 
-	bool bDrawBufferEmpty = DrawBuffer.empty();
+	bool bDrawBufferEmpty = DrawBuffer.empty() && DrawTextBuffer.empty();
 
 	Draw();
 
