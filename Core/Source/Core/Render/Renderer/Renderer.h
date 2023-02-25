@@ -38,6 +38,7 @@ public:
 	void Update();
 
 	void AddToDraw(const DrawInfo& DrawInfo);
+	void AddToDraw(const DrawTextInfo& DrawTextInfo);
 
 private:
 	void Draw();
@@ -48,5 +49,6 @@ private:
 	const Window* DrawWindow;
 
 	std::vector<DrawInfo> DrawBuffer;
+	std::vector<DrawTextInfo> DrawTextBuffer;
 };
 
