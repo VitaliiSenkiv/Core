@@ -4,10 +4,6 @@
 
 #include "GL/glut.h"
 
-void* DrawTextInfo::DefaultFont = GLUT_BITMAP_9_BY_15;
-
-const int DrawInfo::PolygonMode = GL_POLYGON;
-
 
 /* Ініціалізація початкових параметрів */
 /* Налаштування параметрів прикладної програми */
@@ -65,6 +61,7 @@ void Renderer::AddToDraw(const DrawTextInfo& DrawTextInfo)
 
 void Renderer::Draw()
 {
+	// Draw shapes
 	for (DrawInfo& DrawInfo : DrawBuffer)
 	{
 		glColor4fv(DrawInfo.Color.RGBA);
@@ -78,6 +75,7 @@ void Renderer::Draw()
 	}
 	DrawBuffer.clear();
 
+	// Draw text
 	for (DrawTextInfo& DrawTextInfo : DrawTextBuffer)
 	{
 		glColor4fv(DrawTextInfo.Color.RGBA);
@@ -90,7 +88,5 @@ void Renderer::Draw()
 		}
 	}
 	DrawTextBuffer.clear();
-
-	glFlush();
 }
 
