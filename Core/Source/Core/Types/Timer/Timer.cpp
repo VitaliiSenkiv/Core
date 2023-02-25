@@ -12,7 +12,7 @@ void Timer::RegisterCurrentTime()
 	RegistredClock = std::clock();
 }
 
-double Timer::GetDeltaTime()
+double Timer::GetElapsedTime()
 {
 	Clock CurrentClock = std::clock();
 

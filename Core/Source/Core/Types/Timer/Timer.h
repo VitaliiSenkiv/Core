@@ -15,7 +15,7 @@ public:
 	void RegisterCurrentTime();
 
 	/** Returns time passed from last registred timestamp */
-	double GetDeltaTime();
+	double GetElapsedTime();
 
 private:
 	Clock RegistredClock;
