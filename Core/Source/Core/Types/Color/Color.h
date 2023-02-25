@@ -5,6 +5,7 @@
 struct CORE_API Color
 {
 	/* Predefined colors */
+	const static Color White;
 	const static Color Red;
 	const static Color Green;
 	const static Color Blue;
