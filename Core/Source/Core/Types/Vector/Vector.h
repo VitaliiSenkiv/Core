@@ -3,6 +3,8 @@
 template <typename T>
 struct TVector3
 {
+	static TVector3 ZeroVector;
+
 	// TODO: make check, whether T type is number
 public:
 	/* Ctors */
@@ -41,6 +43,8 @@ public:
 	};
 };
 
+template<typename T>
+TVector3<T> TVector3<T>::ZeroVector = {0, 0, 0};
 
 template <typename T>
 TVector3<T> operator*(double Coef, const TVector3<T>& TVector3)

@@ -164,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\Math\Math.cpp" />
+    <ClCompile Include="Source\Core\Render\DrawInfo\DrawInfo.cpp" />
     <ClCompile Include="Source\Core\Render\Renderer\Renderer.cpp" />
     <ClCompile Include="Source\Core\Types\Color\Color.cpp" />
     <ClCompile Include="Source\Core\Render\Window\Window.cpp" />

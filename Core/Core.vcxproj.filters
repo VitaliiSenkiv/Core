@@ -81,5 +81,8 @@
     <ClCompile Include="Source\Core\Types\Timer\Timer.cpp">
       <Filter>Source Files\Types\Timer</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Core\Render\DrawInfo\DrawInfo.cpp">
+      <Filter>Source Files\Render\DrawInfo</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
