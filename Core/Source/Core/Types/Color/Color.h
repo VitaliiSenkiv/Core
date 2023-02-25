@@ -2,6 +2,8 @@
 
 #include "Core/CoreAPI.h"
 
+#include <string>
+
 struct CORE_API Color
 {
 	/* Predefined colors */
@@ -23,6 +25,8 @@ public:
 	static Color MakeRandomColor();
 	static Color MakeRandomColorWithAlpha();
 
+public:
+	std::string GetHexCode();
 
 public:
 	union 

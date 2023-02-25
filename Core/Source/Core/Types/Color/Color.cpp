@@ -1,8 +1,10 @@
 #include "Color.h"
-#include <stdlib.h>
-#include <time.h>
+#include <sstream>
+#include <iomanip>
 
 #include <Core/Math/Math.h>
+
+constexpr int ByteMaxValue = 255;
 
 const Color Color::White = Color(1.f, 1.f, 1.f);
 const Color Color::Red = Color(1.f, 0.f, 0.f);
@@ -29,4 +31,11 @@ Color Color::MakeRandomColorWithAlpha()
 	RandomColor.A = Math::FRand();
 
 	return RandomColor;
+}
+
+std::string Color::GetHexCode()
+{
+	std::stringstream StringStream;
+	StringStream << "#" << std::hex << int(ByteMaxValue * R) << int(ByteMaxValue * G) << int(ByteMaxValue * B);
+	return StringStream.str();
 }
