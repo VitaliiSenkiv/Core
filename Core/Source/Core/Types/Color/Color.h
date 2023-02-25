@@ -25,8 +25,9 @@ public:
 	static Color MakeRandomColor();
 	static Color MakeRandomColorWithAlpha();
 
-public:
 	std::string GetHexCode();
+	Color GetInversed();
+
 
 public:
 	union 

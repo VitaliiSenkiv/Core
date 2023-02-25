@@ -39,3 +39,8 @@ std::string Color::GetHexCode()
 	StringStream << "#" << std::hex << int(ByteMaxValue * R) << int(ByteMaxValue * G) << int(ByteMaxValue * B);
 	return StringStream.str();
 }
+
+Color Color::GetInversed()
+{
+	return Color(1-R, 1-G, 1-B);
+}
