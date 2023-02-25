@@ -89,6 +89,7 @@ void Renderer::Draw()
 			glutBitmapCharacter(DrawTextInfo.Font, Character);
 		}
 	}
+	DrawTextBuffer.clear();
 
 	glFlush();
 }
