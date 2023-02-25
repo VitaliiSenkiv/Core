@@ -41,9 +41,15 @@ void Renderer::Update()
 {
 	glutUpdateMainLoop();
 
-	glClear(GL_COLOR_BUFFER_BIT);
+	bool bDrawBufferEmpty = DrawBuffer.empty();
 
 	Draw();
+
+	glFlush();
+	if (!bDrawBufferEmpty)
+	{
+		glClear(GL_COLOR_BUFFER_BIT);
+	}
 }
 
 void Renderer::AddToDraw(const DrawInfo& DrawInfo)
