@@ -13,6 +13,10 @@ constexpr int TransformMatrixElementsCount = 16;
 struct CORE_API DrawInfo
 {
 public:
+	DrawInfo()
+	{
+		TransformGenerator::CreateIdentity().GetRaw(TransformMatrix);
+	}
 	DrawInfo(const Color& InColor, const std::vector<Vector3d>& InVertices, int InDrawMode)
 		: Color(InColor), Vertices(InVertices), DrawMode(InDrawMode)
 	{
