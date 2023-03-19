@@ -35,5 +35,7 @@ TransformGenerator& TransformGenerator::Scale(const Vector3d& Scale)
 
 void TransformGenerator::GetRaw(double* OutMatrix) const
 {
-	return glGetDoublev(GL_MODELVIEW_MATRIX, OutMatrix);
+	glGetDoublev(GL_MODELVIEW_MATRIX, OutMatrix);
+
+	glPopMatrix();
 }
