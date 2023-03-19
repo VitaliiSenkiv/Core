@@ -161,6 +161,7 @@
     <ClInclude Include="Source\Core\Types\Vector\Vector.h" />
     <ClInclude Include="Source\Core\Render\Window\Window.h" />
     <ClInclude Include="Source\Core\Types\Timer\Timer.h" />
+    <ClInclude Include="Source\Core\Types\Transform\Generator\TransformGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\Math\Math.cpp" />
@@ -169,6 +170,7 @@
     <ClCompile Include="Source\Core\Types\Color\Color.cpp" />
     <ClCompile Include="Source\Core\Render\Window\Window.cpp" />
     <ClCompile Include="Source\Core\Types\Timer\Timer.cpp" />
+    <ClCompile Include="Source\Core\Types\Transform\Generator\TransformGenerator.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

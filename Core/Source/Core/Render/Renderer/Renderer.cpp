@@ -61,10 +61,15 @@ void Renderer::AddToDraw(const DrawTextInfo& DrawTextInfo)
 
 void Renderer::Draw()
 {
+	glMatrixMode(GL_MODELVIEW);
+
 	// Draw shapes
 	for (DrawInfo& DrawInfo : DrawBuffer)
 	{
 		glColor4fv(DrawInfo.Color.RGBA);
+
+		glPushMatrix();
+		glLoadMatrixd(DrawInfo.GetTransformMatrix());
 
 		glBegin(DrawInfo.DrawMode);
 		for (Vector3d& Vertex : DrawInfo.Vertices)
@@ -72,6 +77,8 @@ void Renderer::Draw()
 			glVertex3dv(Vertex.XYZ);
 		}
 		glEnd();
+
+		glPopMatrix();
 	}
 	DrawBuffer.clear();
 

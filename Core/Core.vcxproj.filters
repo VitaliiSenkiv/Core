@@ -34,6 +34,12 @@
     <Filter Include="Source Files\Types\Traits">
       <UniqueIdentifier>{4cdf90b9-4877-4f2b-8501-d5496146b897}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Types\Transform">
+      <UniqueIdentifier>{0629d611-3938-4e8a-8e3a-111e200fb706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Types\Transform\Generator">
+      <UniqueIdentifier>{516ae050-13c9-40a0-b24d-ec64d9fd213e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\Core\Types\CoreTypes.h">
@@ -64,6 +70,9 @@
     <ClInclude Include="Source\Core\Types\Traits\TypeTraits.h">
       <Filter>Source Files\Types\Traits</Filter>
     </ClInclude>
+    <ClInclude Include="Source\Core\Types\Transform\Generator\TransformGenerator.h">
+      <Filter>Source Files\Types\Transform\Generator</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Core\Types\Color\Color.cpp">
@@ -83,6 +92,9 @@
     </ClCompile>
     <ClCompile Include="Source\Core\Render\DrawInfo\DrawInfo.cpp">
       <Filter>Source Files\Render\DrawInfo</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Types\Transform\Generator\TransformGenerator.cpp">
+      <Filter>Source Files\Types\Transform\Generator</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
