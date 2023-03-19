@@ -29,6 +29,7 @@ public:
 	static const int PolygonMode;
 	static const int LineStripMode;
 	static const int LineLoopMode;
+	static const int PointsMode;
 
 public:
 	Color Color;
