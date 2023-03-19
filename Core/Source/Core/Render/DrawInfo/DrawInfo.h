@@ -28,6 +28,7 @@ public:
 	/** Modes: */
 	static const int PolygonMode;
 	static const int LineStripMode;
+	static const int LineLoopMode;
 
 public:
 	Color Color;
