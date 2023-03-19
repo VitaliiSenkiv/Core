@@ -28,6 +28,11 @@ public:
 		return TVector3(X * Coef, Y * Coef, Z * Coef);
 	}
 
+	/* Negate operator */
+	TVector3 operator-() const
+	{
+		return TVector3(-X, -Y, -Z);
+	}
 
 public:
 	union
